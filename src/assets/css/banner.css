@@ -1,0 +1,102 @@
+/************ Banner Css ************/
+.banner {
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('../img/banner-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 12px 0 12px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px){
+    .container1 {
+        max-width: 1140px;
+    }
+}
+
+.row1 {
+    display: flex;
+    flex-direction:row;
+}
+
+.col1 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.banner .tagline {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(90deg, rgba(170, 54, 124, 0.5) 6%, rgba(74, 47, 189, 0.5) 110%);
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+}
+
+.banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+.banner button {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    align-items: center;
+}
+
+.banner button img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    transition: All 0.3s ease-in-out;
+}
+
+.banner button:hover img{
+    margin-left: 25px;
+}
+
+.banner .header-img {
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.banner .banner-btn-clicked {
+    color: #B8B8B8;
+}
