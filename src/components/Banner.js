@@ -4,7 +4,6 @@ import headerImg from '../assets/img/header-img.svg';
 import { useState, useEffect } from 'react';
 
 
-
 const Banner = () => {
     const [clicked, setClicked] = useState(false);
 
